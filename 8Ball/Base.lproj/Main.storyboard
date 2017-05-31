@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to know?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmQ-KM-VWO">
+                                <rect key="frame" x="40" y="60" width="520" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="IF5-EL-VvJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mF-gC-wqO">
+                                <rect key="frame" x="40" y="486" width="520" height="74"/>
+                                <color key="backgroundColor" red="1" green="0.80392156859999997" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="wR7-Wb-lPt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                <state key="normal" title="Show Answer">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAnswer" destination="BYZ-38-t0r" eventType="touchUpInside" id="iBl-aR-Oie"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Absolutely no chance" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoV-cb-3qo">
+                                <rect key="frame" x="81" y="231" width="439" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="439" id="9ob-nG-hd8"/>
+                                    <constraint firstAttribute="height" constant="137" id="RWm-9d-Fx4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000000000002" green="0.55294117649999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9mF-gC-wqO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7pY-EB-0SE"/>
+                            <constraint firstItem="9mF-gC-wqO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="S9h-p2-L7Q"/>
+                            <constraint firstItem="DoV-cb-3qo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TUp-7E-mdT"/>
+                            <constraint firstItem="YmQ-KM-VWO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="VUd-Kr-ysi"/>
+                            <constraint firstItem="DoV-cb-3qo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aSU-ua-HAa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YmQ-KM-VWO" secondAttribute="trailing" constant="20" id="ewa-JE-Xbl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9mF-gC-wqO" secondAttribute="trailing" constant="20" id="hdm-ec-dq7"/>
+                            <constraint firstItem="YmQ-KM-VWO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="j2j-eS-asr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9mF-gC-wqO" secondAttribute="bottom" constant="40" id="mke-te-pS5"/>
+                            <constraint firstItem="YmQ-KM-VWO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sR1-be-a1k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerButton" destination="9mF-gC-wqO" id="4UD-pO-mnB"/>
+                        <outlet property="answerLabel" destination="DoV-cb-3qo" id="Sr7-ov-F20"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="136"/>
+        </scene>
+    </scenes>
+</document>
